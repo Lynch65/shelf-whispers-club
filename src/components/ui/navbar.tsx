@@ -55,6 +55,17 @@ export const Navbar = () => {
             </Button>
           </Link>
 
+          <Link to="/admin">
+            <Button 
+              variant={isActive("/admin") ? "default" : "ghost"} 
+              size="sm" 
+              className="rounded-full"
+            >
+              <BookOpen className="h-4 w-4 mr-2" />
+              Admin
+            </Button>
+          </Link>
+
           <Button variant="ghost" size="sm" className="rounded-full">
             <Heart className="h-4 w-4 mr-2" />
             Favoris

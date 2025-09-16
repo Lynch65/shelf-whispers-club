@@ -7,6 +7,7 @@ import { Layout } from "./components/Layout";
 import Home from "./pages/Home";
 import Collection from "./pages/Collection";
 import Profile from "./pages/Profile";
+import Admin from "./pages/Admin";
 import Auth from "./pages/Auth";
 import NotFound from "./pages/NotFound";
 
@@ -33,6 +34,11 @@ const App = () => (
           <Route path="/profile" element={
             <Layout>
               <Profile />
+            </Layout>
+          } />
+          <Route path="/admin" element={
+            <Layout>
+              <Admin />
             </Layout>
           } />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
